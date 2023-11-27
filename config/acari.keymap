@@ -23,7 +23,7 @@
     quick-tap-ms = <100>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <120>;
+    tapping-term-ms = <150>;
 };
 
 / {
@@ -84,7 +84,7 @@
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            tapping-term-ms = <120>;
             quick-tap-ms = <200>;
         };
     };
