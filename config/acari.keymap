@@ -25,11 +25,7 @@
     tapping-term-ms = <140>;
 };
 
-&shift {
-    global-quick-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <140>;
-};
+
 
 / {
     combos {
