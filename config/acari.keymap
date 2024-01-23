@@ -20,10 +20,9 @@
                   ╰────────────╯ ╰────────────╯        */
 
 &mt {
-    quick-tap-ms = <200>;
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <100>;
+    tapping-term-ms = <140>;
 };
 
 / {
