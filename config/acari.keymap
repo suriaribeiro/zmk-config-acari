@@ -22,10 +22,9 @@
 &mt {
     global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <140>;
+    tapping-term-ms = <160>;
+    quick-tap-ms = <90>;
 };
-
-
 
 / {
     combos {
@@ -88,6 +87,17 @@
             tapping-term-ms = <120>;
             quick-tap-ms = <200>;
         };
+
+        shift: shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <120>;
+            quick-tap-ms = <200>;
+        };
     };
 
     keymap {
@@ -95,10 +105,10 @@
 
         default_layer {
             bindings = <
-&kp Q                   &kp W       &kp E       &kp R        &kp T           &kp Y          &kp U        &kp I        &kp O       &kp P
-&mt RA(LEFT_CONTROL) A  &mt LALT S  &mt LGUI D  &mt LSHFT F  &kp G           &kp H          &mt RSHFT J  &mt RGUI K   &mt RALT L  &mt RIGHT_CONTROL SEMICOLON
-&kp Z                   &kp X       &kp C       &kp V        &kp B           &kp N          &kp M        &kp COMMA    &kp DOT     &kp SLASH
-                                    &lt 6 ESC   &lt 5 TAB    &rht NAV SPACE  &rht NUM BSPC  &lt SYM DEL  &lt FUN RET
+&kp Q                   &kp W       &kp E       &kp R                &kp T           &kp Y          &kp U        &kp I        &kp O       &kp P
+&mt RA(LEFT_CONTROL) A  &mt LALT S  &mt LGUI D  &shift LEFT_SHIFT F  &kp G           &kp H          &mt RSHFT J  &mt RGUI K   &mt RALT L  &mt RIGHT_CONTROL SEMICOLON
+&kp Z                   &kp X       &kp C       &kp V                &kp B           &kp N          &kp M        &kp COMMA    &kp DOT     &kp SLASH
+                                    &lt 6 ESC   &lt 5 TAB            &rht NAV SPACE  &rht NUM BSPC  &lt SYM DEL  &lt FUN RET
             >;
         };
 
