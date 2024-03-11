@@ -74,6 +74,11 @@
             layers = <0>;
             timeout-ms = <40>;
         };
+
+        esc-blu {
+            bindings = <&lt 6 ESC>;
+            key-positions = <31 30>;
+        };
     };
 
     behaviors {
