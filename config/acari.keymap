@@ -137,7 +137,7 @@
 
         num_layer {
             bindings = <
-&kp APOSTROPHE    &kp N7  &kp N8      &kp N9  &kp EQUAL          &kp DOLLAR            &trans     &trans         &trans    &trans
+&kp APOSTROPHE    &kp N7  &kp N8      &kp N9  &kp EQUAL          &kp DOLLAR            &euro      &trans         &trans    &trans
 &kp LEFT_BRACKET  &kp N4  &kp N5      &kp N6  &kp RIGHT_BRACKET  &kp LA(LS(NUMBER_2))  &kp LSHFT  &kp RIGHT_GUI  &kp LALT  &kp RIGHT_CONTROL
 &kp GRAVE         &kp N1  &kp N2      &kp N3  &kp BSLH           &trans                &trans     &trans         &trans    &trans
                           &kp PERIOD  &kp N0  &kp MINUS          &trans                &trans     &trans
@@ -177,6 +177,15 @@
 &trans        &none         &none         &trans        &trans  &trans      &bt BT_PRV  &bt BT_NXT  &trans  &trans
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none   &trans      &trans      &trans      &trans  &trans
                             &trans        &trans        &trans  &trans      &trans      &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
