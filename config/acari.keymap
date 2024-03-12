@@ -113,7 +113,7 @@
 &kp Q                   &kp W       &kp E       &kp R                &kp T           &kp Y          &kp U                 &kp I        &kp O       &kp P
 &mt RA(LEFT_CONTROL) A  &mt LALT S  &mt LGUI D  &shift LEFT_SHIFT F  &kp G           &kp H          &shift RIGHT_SHIFT J  &mt RGUI K   &mt RALT L  &mt RIGHT_CONTROL SEMICOLON
 &kp Z                   &kp X       &kp C       &kp V                &kp B           &kp N          &kp M                 &kp COMMA    &kp DOT     &kp SLASH
-                                    &lt 6 ESC   &mt LEFT_SHIFT TAB   &rht NAV SPACE  &rht NUM BSPC  &lt SYM DEL           &lt FUN RET
+                                    &lt 5 ESC   &mt LEFT_SHIFT TAB   &rht NAV SPACE  &rht NUM BSPC  &lt SYM DEL           &lt FUN RET
             >;
         };
 
