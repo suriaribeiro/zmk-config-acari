@@ -105,6 +105,15 @@
         };
     };
 
+    macros {
+        euro: euro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(NUMBER_0) &kp LA(NUMBER_1) &kp LA(NUMBER_2) &kp LA(N8)>;
+            label = "EURO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
