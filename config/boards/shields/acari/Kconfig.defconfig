@@ -14,9 +14,6 @@ endif
 
 if SHIELD_ACARI_LEFT || SHIELD_ACARI_RIGHT
 
-config ZMK_KEYBOARD_NAME
-	default "acari right"
-
 config ZMK_SPLIT
 	default y
 
