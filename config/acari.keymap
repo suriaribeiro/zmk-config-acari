@@ -94,25 +94,31 @@
             quick-tap-ms = <200>;
         };
 
- lh_pht: left_positional_hold_tap {
+        lh_pht: left_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;// <---[[right-hand keys]]
         };
- rh_pht: r_positional_hold_tap {
+
+        rh_pht: r_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-unless-interrupted";
             tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14;/ <---[[right-hand keys]]
+
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
+
+            / <---[[right-hand keys]]
         };
-td: tapdance {
+
+        td: tapdance {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPDANCE";
             #binding-cells = <2>;
@@ -148,10 +154,10 @@ td: tapdance {
 
         default_layer {
             bindings = <
-&kp Q                   &kp W       &kp E       &kp R                &kp T      &kp Y          &kp U                 &kp I        &kp O                &kp P
-&mt RA(LEFT_CONTROL) A  &mt LALT S  &mt LGUI D  &shift LEFT_SHIFT F  &kp G      &kp H          &shift RIGHT_SHIFT J  &mt RGUI K   &mt RALT L           &mt RIGHT_CONTROL SEMICOLON
-&kp Z                   &kp X       &kp C       &kp V                &kp B      &kp N          &kp M                 &kp COMMA    &td EXCLAMATION DOT  &kp SLASH
-                                    &lt 5 ESC   &lt 2 TAB            &kp SPACE  &rht NUM BSPC  &lt SYM DEL           &lt FUN RET
+&kp Q                   &kp W       &kp E       &kp R                 &kp T      &kp Y          &kp U                  &kp I        &kp O                &kp P
+&mt RA(LEFT_CONTROL) A  &mt LALT S  &mt LGUI D  &lh_pht LEFT_SHIFT F  &kp G      &kp H          &rh_pht RIGHT_SHIFT J  &mt RGUI K   &mt RALT L           &mt RIGHT_CONTROL SEMICOLON
+&kp Z                   &kp X       &kp C       &kp V                 &kp B      &kp N          &kp M                  &kp COMMA    &td EXCLAMATION DOT  &kp SLASH
+                                    &lt 5 ESC   &lt 1 TAB             &kp SPACE  &rht NUM BSPC  &lt SYM DEL            &lt FUN RET
             >;
         };
 
