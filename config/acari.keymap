@@ -167,6 +167,7 @@
 &mt RA(LEFT_CONTROL) A  &mt LALT S  &mt LGUI D  &bhm LEFT_SHIFT F  &kp G         &kp H          &bhm LEFT_SHIFT J  &mt RGUI K   &mt RALT L           &mt RIGHT_CONTROL SEMICOLON
 &kp Z                   &kp X       &kp C       &kp V              &kp B         &kp N          &kp M              &kp COMMA    &td EXCLAMATION DOT  &kp SLASH
                                     &lt 5 ESC   &lt 1 SPACE        &rht 1 SPACE  &rht NUM BSPC  &lt SYM DEL        &lt FUN RET
+
             >;
         };
 
