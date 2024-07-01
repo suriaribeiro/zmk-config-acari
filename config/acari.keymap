@@ -162,7 +162,7 @@
 
         nav_layer {
             bindings = <
-&kp LC(Z)         &kp LC(X)  &kp LC(C)     &kp LC(V)  &kp LC(Y)      &kp PG_UP      &none           &kp UP_ARROW    &none      &none
+&kp LC(Z)         &kp LC(X)  &kp LC(C)     &kp LC(V)  &kp LC(Y)      &kp PG_UP      &kp TAB         &kp UP_ARROW    &none      &none
 &kp LEFT_CONTROL  &kp LALT   &kp LEFT_GUI  &kp LSHFT  &kp PAGE_UP    &kp PAGE_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans
 &trans            &trans     &trans        &trans     &kp PAGE_DOWN  &kp INSERT     &kp HOME        &none           &none      &kp END
                              &trans        &trans     &trans         &trans         &trans          &trans
