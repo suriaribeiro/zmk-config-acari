@@ -7,7 +7,7 @@
 #include "acari.dtsi"
 
 &default_transform {
-	col-offset = <5>;
+    col-offset = <5>;
 };
 
 &kscan0 {
@@ -18,4 +18,12 @@
         , <&xiao_d 1 GPIO_ACTIVE_HIGH>
         , <&xiao_d 0 GPIO_ACTIVE_HIGH>
         ;
+};
+
+/* Configure NFC pins as I2C (SDA and SCL) */
+&i2c0 {
+    status = "okay";
+    sda-pin = <9>;    /* P0.09 (NFC1) for SDA */
+    scl-pin = <10>;   /* P0.10 (NFC2) for SCL */
+    clock-frequency = <I2C_BITRATE_STANDARD>;  /* Set desired I2C clock frequency */
 };
