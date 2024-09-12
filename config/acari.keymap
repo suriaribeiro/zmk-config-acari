@@ -220,7 +220,7 @@
 &trans  &trans  &trans  &trans  &trans  &kp PAGE_UP    &mkp MB1  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &mkp MB2  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans         &trans    &trans  &trans  &trans
-                &trans  &trans  &to 0   &mkp MB2       &mkp MB1  &trans
+                &trans  &trans  &to 0   &mkp MB1       &mkp MB2  &trans
             >;
         };
     };
