@@ -217,10 +217,10 @@
 
         layer_7 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans
-                &trans  &trans  &to 0   &mkp MB2  &mkp MB1  &trans
+&trans  &trans  &trans  &trans  &trans  &kp PAGE_UP    &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans    &trans  &trans  &trans
+                &trans  &trans  &to 0   &mkp MB2       &mkp MB1  &trans
             >;
         };
     };
