@@ -1,3 +1,4 @@
+#include "acari.dtsi" // Notice that the main dtsi files are included in the overlay.
 / {
     default_layout: default_layout {
         compatible = "zmk,physical-layout";
