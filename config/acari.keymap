@@ -62,11 +62,6 @@
             timeout-ms = <40>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <31 32>;
-        };
-
         apost {
             bindings = <&kp APOSTROPHE>;
             key-positions = <14 15>;
@@ -172,7 +167,7 @@
 
         num_layer {
             bindings = <
-&kp APOS           &kp N7  &kp N8   &kp N9  &kp EQUAL  &kp DOLLAR            &euro      &trans         &trans    &trans
+&kp TAB            &kp N7  &kp N8   &kp N9  &kp EQUAL  &kp DOLLAR            &euro      &trans         &trans    &trans
 &kp DOUBLE_QUOTES  &kp N4  &kp N5   &kp N6  &kp PLUS   &kp LA(LS(NUMBER_2))  &kp LSHFT  &kp RIGHT_GUI  &kp LALT  &kp RIGHT_CONTROL
 &kp N0             &kp N1  &kp N2   &kp N3  &kp DOT    &trans                &trans     &trans         &trans    &trans
                            &kp TAB  &kp N0  &trans     &mkp RCLK             &mkp LCLK  &trans
