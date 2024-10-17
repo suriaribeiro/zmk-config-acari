@@ -1,8 +1,11 @@
 // acari_left.overlay
 
 #include "acari.dtsi" // Notice that the main dtsi files are included in the overlay.
-
-&kscan0 {
+/ {
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        kscan = &kscan0 {
     col-gpios
         = <&xiao_d 0 GPIO_ACTIVE_HIGH>
         , <&xiao_d 1 GPIO_ACTIVE_HIGH>
@@ -10,5 +13,5 @@
         , <&xiao_d 3 GPIO_ACTIVE_HIGH>
         , <&xiao_d 4 GPIO_ACTIVE_HIGH>
         ;
-
+    };
 };
